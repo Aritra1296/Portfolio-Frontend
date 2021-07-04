@@ -6,17 +6,15 @@ import TimelineConnector from '@material-ui/lab/TimelineConnector'
 import TimelineContent from '@material-ui/lab/TimelineContent'
 import TimelineDot from '@material-ui/lab/TimelineDot'
 import Typography from '@material-ui/core/Typography'
-import WorkIcon from '@material-ui/icons/Work'
+import './Timeline.css'
 
-const CustomTimeline = ({ title, children ,iicon}) => {
+const CustomTimeline = ({ title, children, icon }) => {
   return (
     <Timeline className={'timeline'}>
       {/* Item Header */}
       <TimelineItem className={'timeline_firstItem'}>
         <TimelineSeparator>
-          <TimelineDot className={'timeline_dot_header'} >
-           { <WorkIcon/>}
-          </TimelineDot>
+          <TimelineDot className={'timeline_dot_header'}>{icon}</TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>
@@ -26,22 +24,16 @@ const CustomTimeline = ({ title, children ,iicon}) => {
         </TimelineContent>
       </TimelineItem>
       {children}
-
-      {/* Rest Items */}
-      <TimelineItem>
-        <CustomTimelineSeparator />
-        <TimelineContent>Code</TimelineContent>
-      </TimelineItem>
     </Timeline>
   )
 }
 
 export const CustomTimelineSeparator = () => {
   return (
-  <TimelineSeparator className={'separator_padding'}>
-    <TimelineDot className={'timeline_dot'} />
-    <TimelineConnector />
-  </TimelineSeparator>
+    <TimelineSeparator className={'separator_padding'}>
+      <TimelineDot variant={'outlined'} className={'timeline_dot'} />
+      <TimelineConnector />
+    </TimelineSeparator>
   )
 }
 

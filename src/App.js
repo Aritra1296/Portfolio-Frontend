@@ -22,7 +22,7 @@ function App() {
         >
           <Profile />
         </Grid>
-        <Grid item xs style={{ backgroundColor: 'blue' }}>
+        <Grid item xs >
           <Header />
           <Router>
             <Switch>
