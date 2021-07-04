@@ -6,7 +6,7 @@ import GitHubIcon from '@material-ui/icons/GitHub'
 
 
 export default {
-  name: 'Aritra',
+  name: 'Aritra Chatterjee',
   title: 'Full Stack Developer',
 
   birthday: '12 Aug ,1997',

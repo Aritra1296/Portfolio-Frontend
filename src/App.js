@@ -10,21 +10,14 @@ import './App.css'
 
 function App() {
   return (
-    <Container>
-      <Grid container>
-        <Grid
-          item
-          xs={12}
-          sm={12}
-          md={4}
-          lg={3}
-          
-        >
+    <Container className={'top_60'}>
+      <Grid container spacing={4}>
+        <Grid item xs={12} sm={12} md={4} lg={3}>
           <Profile />
         </Grid>
         <Grid item xs >
-          <Header />
           <Router>
+            <Header />
             <Switch>
               <Route path='/portfolio'>
                 <Portfolio />
