@@ -4,6 +4,17 @@ import Typography from '@material-ui/core/Typography'
 import resumeData from '../../utils/resumeData'
 import { Container, Grid } from '@material-ui/core'
 import './Resume.css'
+import CustomTimeline, {
+  CustomTimelineSeparator,
+} from '../../components/Timeline/Timeline'
+import WorkIcon from '@material-ui/icons/Work'
+import SchoolIcon from '@material-ui/icons/School'
+import TimelineContent from '@material-ui/lab/TimelineContent'
+import TimelineItem from '@material-ui/lab/TimelineItem'
+import { Icon } from '@material-ui/core'
+import Paper from '@material-ui/core/Paper'
+import TimelineDot from '@material-ui/lab/TimelineDot'
+
 
 const Resume = () => {
   return (
@@ -25,20 +36,113 @@ const Resume = () => {
       <Grid container className='section pb_45'>
         <Grid item className='section_title mb_30'>
           <span></span>
-          <h6 className='section_title_text'>Education and experience</h6>
+          <h6 className='section_title_text'>Resume</h6>
         </Grid>
+
         <Grid item xs={12}>
-          <Typography variant='body1' className='aboutme_text'>
-            {/* {resumeData.about} */}
-          </Typography>
+          <Grid container className='resume_timeline'>
+            {/* Experience */}
+            <Grid sm={12} md={6}>
+              <CustomTimeline title='Work Experience' icon={<WorkIcon />}>
+                {resumeData.experiences.map((experience) => (
+                  <TimelineItem>
+                    <CustomTimelineSeparator />
+                    <TimelineContent className='timeline_content'>
+                      <Typography className='timeline_title'>
+                        {experience.title}
+                      </Typography>
+                      <Typography variant='caption' className='timeline_date'>
+                        {experience.date}
+                      </Typography>
+                      <Typography
+                        variant='body2'
+                        className='timeline_description'
+                      >
+                        {experience.description}
+                      </Typography>
+                    </TimelineContent>
+                  </TimelineItem>
+                ))}
+              </CustomTimeline>
+            </Grid>
+
+            {/* Education */}
+            <Grid sm={12} md={6}>
+              <CustomTimeline title='Education' icon={<SchoolIcon />}>
+                {resumeData.educations.map((education) => (
+                  <TimelineItem>
+                    <CustomTimelineSeparator />
+                    <TimelineContent className='timeline_content'>
+                      <Typography className='timeline_title'>
+                        {education.title}
+                      </Typography>
+                      <Typography variant='caption' className='timeline_date'>
+                        {education.date}
+                      </Typography>
+                      <Typography
+                        variant='body2'
+                        className='timeline_description'
+                      >
+                        {education.description}
+                      </Typography>
+                    </TimelineContent>
+                  </TimelineItem>
+                ))}
+              </CustomTimeline>
+            </Grid>
+          </Grid>
         </Grid>
       </Grid>
 
       {/* Services */}
-      <Grid container className=''></Grid>
+      <Grid container className='section pb_45'>
+        <Grid item className='section_title mb_30'>
+          <span></span>
+          <h6 className='section_title_text'>My Services</h6>
+        </Grid>
+
+        <Grid item xs={12}>
+          <Grid container spacing={3} justify='space-around'>
+            {resumeData.services.map((service) => (
+              <Grid item xs={12} sm={6} md={3}>
+                <div className='service'>
+                  <Icon className='service_icon'>{service.icon}</Icon>
+                  <Typography className='service_title' variant='h6'>
+                    {service.title}
+                  </Typography>
+                  <Typography className='service_description' variant='body2'>
+                    {service.description}
+                  </Typography>
+                </div>
+              </Grid>
+            ))}
+          </Grid>
+        </Grid>
+      </Grid>
 
       {/* Skills */}
-      <Grid container className=''></Grid>
+      <Grid
+        container
+        spacing={3}
+        justify='space-between'
+        className='section graybg pb_45'
+      >
+        {resumeData.skills.map((skill) => (
+          <Grid item xs={12} sm={6} md={3}>
+            <Paper elevation={0} >
+              <Typography variant="h6" className='skill_title'>
+                {skill.title}
+              </Typography>
+              {skill.description.map(element=>(
+                <Typography>
+                  <TimelineDot/>
+                  {element}
+                </Typography>
+              ))}
+            </Paper>
+          </Grid>
+        ))}
+      </Grid>
 
       {/* Contacts */}
       <Grid container className=''></Grid>
