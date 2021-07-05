@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import { Link, NavLink, useRouter, withRouter } from 'react-router-dom'
 import { HomeRounded, Telegram } from '@material-ui/icons'
 import resumeData from '../../utils/resumeData'
-import { Facebook, LinkedIn, Twitter, GitHub  } from '@material-ui/icons'
+import { Facebook, LinkedIn, Twitter, GitHub } from '@material-ui/icons'
 import CustomButton from '../Button/Button'
 import './Header.css'
 
@@ -49,7 +49,9 @@ const Header = (props) => {
                 {resumeData.socials[key].icon}
               </a>
             ))}
-            <CustomButton text='Hire Me' icon={<Telegram />} />
+            <a href={resumeData.socials.LinkedIn.link} target='_blank'>
+              <CustomButton text='Hire Me' icon={<Telegram />}></CustomButton>
+            </a>
           </div>
         </Navbar.Collapse>
       </Navbar>

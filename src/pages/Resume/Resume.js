@@ -15,12 +15,11 @@ import { Icon } from '@material-ui/core'
 import Paper from '@material-ui/core/Paper'
 import TimelineDot from '@material-ui/lab/TimelineDot'
 
-
 const Resume = () => {
   return (
     <>
       {/* About Me */}
-      <Grid container className='section pb_45'>
+      <Grid container className='section pb_45 pt_45'>
         <Grid item className='section_title mb_30'>
           <span></span>
           <h6 className='section_title_text'>About Me</h6>
@@ -129,13 +128,13 @@ const Resume = () => {
       >
         {resumeData.skills.map((skill) => (
           <Grid item xs={12} sm={6} md={3}>
-            <Paper elevation={0} >
-              <Typography variant="h6" className='skill_title'>
+            <Paper elevation={0} className='skill'>
+              <Typography variant='h6' className='skill_title'>
                 {skill.title}
               </Typography>
-              {skill.description.map(element=>(
-                <Typography>
-                  <TimelineDot/>
+              {skill.description.map((element) => (
+                <Typography variant='body2' className='skill_description'>
+                  <TimelineDot variant='outlined' className='timeline_dot' />
                   {element}
                 </Typography>
               ))}
