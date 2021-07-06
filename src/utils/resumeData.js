@@ -19,7 +19,7 @@ export default {
 
   socials: {
     Facebook: {
-      link: 'https://www.facebook.com/',
+      link: 'https://www.facebook.com/aritra.chatterjee.14/',
       text: 'MyFacebook',
       icon: <FacebookIcon />,
     },
@@ -29,12 +29,12 @@ export default {
       icon: <TwitterIcon />,
     },
     LinkedIn: {
-      link: 'https://www.linkedin.com/',
+      link: 'https://www.linkedin.com/in/aritra-chatterjee-a25a4519a',
       text: 'MyLinkedIn',
       icon: <LinkedInIcon />,
     },
     Github: {
-      link: 'https://www.github.com/',
+      link: 'https://www.github.com/Aritra1296',
       text: 'MyGitHub',
       icon: <GitHubIcon />,
     },
@@ -55,35 +55,38 @@ export default {
       title: 'St Thomas College of Engineering & Technology',
       date: '2015-2019',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco ',
+        'West Bengal University Of Technology .Final Exam score :DGPA: 8.13 out of 10 ',
     },
     {
       title: 'Mahesh SriRamkrishna Ashram',
       date: '2013-2015',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco ',
+        'Board Name :Council for The Indian School Certificate Examinations .Final Exam score : 88.88% ',
     },
     {
       title: 'Mahesh SriRamkrishna Ashram',
       date: '2011-2013',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco ',
+        'Board Name :Council for The Indian School Certificate Examinations .Final Exam score : 92.28%  ',
     },
   ],
   services: [
     {
       title: 'Web Development',
-      description: 'Web Development Web Development Web Development',
+      description:
+        'Web Development Web Enhancement Web RCA preparation and give resolution. ',
       icon: <AssignmentOutlinedIcon />,
     },
     {
-      title: 'Web Development',
-      description: 'Web Development Web Development Web Development',
+      title: 'Database',
+      description:
+        'Writing SQL queries as per requirements and prepare reports.',
       icon: <WebOutlinedIcon />,
     },
     {
-      title: 'Web Development',
-      description: 'Web Development Web Development Web Development',
+      title: 'Business Handlling',
+      description:
+        'Attending project triage meetings and representing the team',
       icon: <AssignmentOutlinedIcon />,
     },
   ],
@@ -111,8 +114,22 @@ export default {
       image:
         'https://images.unsplash.com/photo-1579546929662-711aa81148cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80',
       title: 'React Project 1',
-      caption: 'This is short description',
-      description: 'This is my first Project',
+      caption: 'This is a Contact Saver App',
+      description:
+        'Sometimes you might not want to save contact details in your phone. So that you can store the Contact Details information in this App. Build on MERN and MongoDB Atlas NoSql Database',
+      links: [
+        { link: 'https://github.com/Aritra1296', icon: <GitHubIcon /> },
+        { link: 'http://web.aritrarivu.co.in/', icon: <Language /> },
+      ],
+    },
+    {
+      tag: 'React',
+      image:
+        'https://images.unsplash.com/photo-1579546929662-711aa81148cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80',
+      title: 'React Project 2',
+      caption: 'This is a Portfolio App',
+      description:
+        'You can build your own portfolio and consolidate your all Projects',
       links: [
         { link: 'https://github.com/Aritra1296', icon: <GitHubIcon /> },
         { link: 'http://web.aritrarivu.co.in/', icon: <Language /> },
