@@ -47,7 +47,7 @@ export default {
       title: 'Programmer Analyst- Cognizant ',
       date: 'July 2019- present',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco . ',
+        'Application development and enhancement.Writing SQL queries as per requirements and prepare reports..Preparation of test cases.RCA preparation and give resolution. Reports building and reporting from the testing team. Handling Onsite & Offshore calls regularly giving updates. Attending project triage meetings and representing the team. ',
     },
   ],
   educations: [
