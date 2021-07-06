@@ -13,7 +13,7 @@ padding: 0;
  color: darkslategray;
 }
 .header .header_link:hover{
- color: var(--main-color) !important;;
+ color: var(--main-color) !important;
 }
 .header .header_link_active{
  font-weight: 500;
@@ -36,7 +36,11 @@ padding: 0;
  align-items: center;
 }
 .header .header_right > a >.MuiSvgIcon-root{
-font-size: 16px;
+font-size: 24px;
 margin-right: 12px;
- color: black;
+color: black;
+text-decoration: none;
+}
+.header .header_right_hireMe {
+text-decoration: none;
 }

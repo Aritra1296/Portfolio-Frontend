@@ -103,9 +103,8 @@ const Portfolio = () => {
           setProjectDialogValue(false)
         }}
         className='projectDialog'
-        maxWidth={"lg"}
-        fullwidth
-      >
+       maxWidth={"xs"}
+              >
         <DialogTitle
           onClose={() => {
             setProjectDialogValue(false)

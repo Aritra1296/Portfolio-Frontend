@@ -49,7 +49,11 @@ const Header = (props) => {
                 {resumeData.socials[key].icon}
               </a>
             ))}
-            <a href={resumeData.socials.LinkedIn.link} target='_blank'>
+            <a
+              href={resumeData.socials.LinkedIn.link}
+              target='_blank'
+              className='header_right_hireMe'
+            >
               <CustomButton text='Hire Me' icon={<Telegram />}></CustomButton>
             </a>
           </div>

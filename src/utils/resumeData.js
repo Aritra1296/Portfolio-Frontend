@@ -116,7 +116,7 @@ export default {
       title: 'React Project 1',
       caption: 'This is a Contact Saver App',
       description:
-        'Sometimes you might not want to save contact details in your phone. So that you can store the Contact Details information in this App. Build on MERN and MongoDB Atlas NoSql Database',
+        'Sometimes you might not want to save contact details in your phone. So that you can store the Contact Details information in this App Build on MERN',
       links: [
         { link: 'https://github.com/Aritra1296', icon: <GitHubIcon /> },
         { link: 'http://web.aritrarivu.co.in/', icon: <Language /> },

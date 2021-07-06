@@ -40,7 +40,7 @@
   text-decoration: none;
 }
 .timelineItem_text > a {
-  color: #787878 !important;
+  color: var(--main-color) !important;
   text-decoration: none;
 }
 .timelineItem_text > span {
