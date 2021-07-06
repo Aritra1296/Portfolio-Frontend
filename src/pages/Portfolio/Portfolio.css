@@ -1,41 +1,64 @@
-
 /* Tabs */
-.customTabs .active{
- color: var(--main-color);
+.customTabs .active {
+  color: var(--main-color);
 }
-.customTabs .customTabs_item{
- padding: 0;
- min-width: 0;
- margin-right: 20px;
- text-transform: inherit;
- font-size: 14px;
- font-weight: 400;
- outline-width: 0;
+.customTabs .customTabs_item {
+  padding: 0;
+  min-width: 0;
+  margin-right: 20px;
+  text-transform: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  outline-width: 0;
 }
 /* End of Tabs */
 
 /* Card */
 .CustomCard {
-height: 100%;
-max-width: 350;
-box-shadow: 0px 0px 48px 0px rgba(4, 6, 4, 0.08) !important;
-border-radius: 5px;
-overflow: hidden;
-outline-width: 0;
+  height: 100%;
+  max-width: 350px;
+  box-shadow: 0px 0px 48px 0px rgba(4, 6, 4, 0.08) !important;
+  border-radius: 5px;
+  overflow: hidden;
+  outline-width: 0px !important;
 }
 
-.CustomCard .CustomCard_image{
- height: 140px;
-
+.CustomCard .CustomCard_image {
+  height: 140px;
 }
-.CustomCard .CustomCard_image{
- 
+.CustomCard .CustomCard_title {
+  font-weight: 600;
 }
-.CustomCard .CustomCard_description{
- 
+.CustomCard .CustomCard_caption {
+  color: darkslategray !important;
+  font-weight: 300;
 }
 /* End of cards */
 
 /* Dialog */
 
+.projectDialog .projectDialog_image {
+  max-width: 300px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+.projectDialog .projectDialog_description {
+  margin-top: 10px !important;
+}
+.projectDialog .projectDialog_actions {
+  justify-content: center !important;
+  margin-bottom: 10px;
+}
+.projectDialog .projectDialog_icon {
+  color: darkslategray;
+  margin: 0px 12px;
+  cursor: pointer;
+}
+.projectDialog .projectDialog_icon :hover {
+  color: var(--main-color);
+}
+.projectDialog .projectDialog_icon > .MuiSvgIcon-root {
+  font-size: 30px !important;
+}
 /* End of Dialog */

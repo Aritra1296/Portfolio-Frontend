@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './Portfolio.css'
+import displayImage from '../../assets/images/displayImage.jpg'
 import resumeData from '../../utils/resumeData'
 import { Container, Grid, Tab } from '@material-ui/core'
 import { Tabs, Typography } from '@material-ui/core'
@@ -17,12 +18,11 @@ const Portfolio = () => {
   const [tabValue, setTabValue] = useState('All')
   const [projectDialogValue, setProjectDialogValue] = useState(false)
 
-  const ProjectDialog = () => {}
 
   return (
     <Grid container className='section pb_45 pt_45'>
       {/* Title */}
-      <Grid item className='section_title mb_30'>
+      <Grid item className='section_title mb_20'>
         <span></span>
         <h6 className='section_title_text'>Portfolio</h6>
       </Grid>
@@ -57,11 +57,11 @@ const Portfolio = () => {
       </Grid>
       {/* Projects */}
       <Grid item xs={12}>
-        <Grid container spacing={2}>
+        <Grid container spacing={3}>
           {resumeData.projects.map((project) => (
             <>
               {tabValue == project.tag || tabValue == 'All' ? (
-                <Grid item>
+                <Grid item xs={12} sm={6} md={4} lg={3}>
                   <Grow in timeout={1000}>
                     <Card
                       className='CustomCard'
@@ -74,18 +74,18 @@ const Portfolio = () => {
                           className='CustomCard_image'
                           image={project.image}
                           title={project.title}
-                        >
-                          <CardContent>
-                            <Typography className='CustomCard_image'>
-                              {project.title}
-                            </Typography>
-                            <Typography
-                              variant='body2'
-                              className='' >
-                              {project.caption}
-                            </Typography>
-                          </CardContent>
-                        </CardMedia>
+                        />
+                        <CardContent>
+                          <Typography className='CustomCard_title'>
+                            {project.title}
+                          </Typography>
+                          <Typography
+                            variant='body2'
+                            className='CustomCard_caption'
+                          >
+                            {project.caption}
+                          </Typography>
+                        </CardContent>
                       </CardActionArea>
                     </Card>
                   </Grow>
@@ -102,6 +102,9 @@ const Portfolio = () => {
         onClose={() => {
           setProjectDialogValue(false)
         }}
+        className='projectDialog'
+        maxWidth={"lg"}
+        fullwidth
       >
         <DialogTitle
           onClose={() => {
@@ -110,7 +113,11 @@ const Portfolio = () => {
         >
           {projectDialogValue.title}
         </DialogTitle>
-        <img src='' alt='' className='projectDialog_image' />
+        <img
+          src={projectDialogValue.image}
+          alt=''
+          className='projectDialog_image'
+        />
         <DialogContent>
           <Typography className='projectDialog_description'>
             {projectDialogValue.description}

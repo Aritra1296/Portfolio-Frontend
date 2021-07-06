@@ -47,9 +47,12 @@ const Profile = () => {
       </figure>
       <div className='profile_information'>
         <CustomTimeline icon={<PersonOutlineIcon />}>
-          <CustomTimelineItem title='Name' text={resumeData.name} />
-          <CustomTimelineItem title='Title' text={resumeData.title} />
-          <CustomTimelineItem title='Email' text={resumeData.email} />
+          <CustomTimelineItem title='Name ' text={resumeData.name} />
+          <CustomTimelineItem title='Title ' text={resumeData.title} />
+          <CustomTimelineItem title='Email ' text={resumeData.email} />
+          <CustomTimelineItem title='Age ' text={resumeData.age} />
+          <CustomTimelineItem title='Address ' text={resumeData.address} />
+          <CustomTimelineItem title='Phone  ' text={resumeData.phone} />
           {Object.keys(resumeData.socials).map((key) => (
             <CustomTimelineItem
               title={key}
@@ -59,9 +62,7 @@ const Profile = () => {
           ))}
         </CustomTimeline>
         <br />
-        <div className='button_container'>
-          <CustomButton text={'Download CV'} icon={<GetAppIcon />} />
-        </div>
+       
       </div>
     </div>
   )

@@ -7,14 +7,14 @@ import Language from '@material-ui/icons/Language'
 import AssignmentOutlinedIcon from '@material-ui/icons/AssignmentOutlined'
 import WebOutlinedIcon from '@material-ui/icons/WebOutlined'
 
+
 export default {
   name: 'Aritra Chatterjee',
   title: 'Full Stack Developer',
-
-  birthday: '12 Aug ,1997',
+  age: '25',
   email: 'aritrivu@gmail.com',
   job: 'Freelancer',
-  address: 'Chandannagar ,WestBengal, India',
+  address: 'Kolkata, India',
   phone: '9830243909',
 
   socials: {
@@ -49,29 +49,23 @@ export default {
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco . ',
     },
-    {
-      title: 'Programmer Analyst- Cognizant ',
-      date: 'July 2019- present',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco . ',
-    },
   ],
   educations: [
     {
-      title: 'Collge',
-      date: 'July 2019- present',
+      title: 'St Thomas College of Engineering & Technology',
+      date: '2015-2019',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco ',
     },
     {
-      title: 'School 2',
-      date: 'date',
+      title: 'Mahesh SriRamkrishna Ashram',
+      date: '2013-2015',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco ',
     },
     {
-      title: 'School 1',
-      date: 'date',
+      title: 'Mahesh SriRamkrishna Ashram',
+      date: '2011-2013',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco ',
     },
@@ -114,8 +108,8 @@ export default {
   projects: [
     {
       tag: 'React',
-      imeage:
-        'https://www.google.com/url?sa=i&url=https%3A%2F%2Fblog.prezi.com%2Four-25-best-presentation-backgrounds-that-grab-your-attention%2F&psig=AOvVaw0EzsHjdTG4pmkAcjny8gDC&ust=1625633216879000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCPiZlOXRzfECFQAAAAAdAAAAABAD',
+      image:
+        'https://images.unsplash.com/photo-1579546929662-711aa81148cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80',
       title: 'React Project 1',
       caption: 'This is short description',
       description: 'This is my first Project',
@@ -126,7 +120,7 @@ export default {
     },
     {
       tag: 'Java',
-      imeage:
+      image:
         'https://images.unsplash.com/photo-1579546929662-711aa81148cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80',
       title: 'Java Project 1',
       caption: 'This is short description',
