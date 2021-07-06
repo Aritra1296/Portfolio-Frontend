@@ -110,4 +110,26 @@ export default {
       description: ['Git', 'GitHub', 'Scrum/Agile'],
     },
   ],
+  projects: [
+    {
+      tag: 'React',
+      imeage:
+        'https://images.unsplash.com/photo-1579546929662-711aa81148cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80',
+      title: 'React Project 1',
+      caption: 'This is short description',
+      description: 'This is my first Project',
+      links: [{ link: 'http://web.aritrarivu.co.in/' }],
+      links: [{ link: 'https://github.com/Aritra1296' }],
+    },
+    {
+      tag: 'Java',
+      imeage:
+        'https://images.unsplash.com/photo-1579546929662-711aa81148cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80',
+      title: 'Java Project 1',
+      caption: 'This is short description',
+      description: 'This is my first Project',
+      links: [{ link: 'http://web.aritrarivu.co.in/' }],
+      links: [{ link: 'https://github.com/Aritra1296' }],
+    },
+  ],
 }
