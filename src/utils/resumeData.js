@@ -3,6 +3,7 @@ import FacebookIcon from '@material-ui/icons/Facebook'
 import TwitterIcon from '@material-ui/icons/Twitter'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import GitHubIcon from '@material-ui/icons/GitHub'
+import Language from '@material-ui/icons/Language'
 import AssignmentOutlinedIcon from '@material-ui/icons/AssignmentOutlined'
 import WebOutlinedIcon from '@material-ui/icons/WebOutlined'
 
@@ -114,12 +115,14 @@ export default {
     {
       tag: 'React',
       imeage:
-        'https://images.unsplash.com/photo-1579546929662-711aa81148cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80',
+        'https://www.google.com/url?sa=i&url=https%3A%2F%2Fblog.prezi.com%2Four-25-best-presentation-backgrounds-that-grab-your-attention%2F&psig=AOvVaw0EzsHjdTG4pmkAcjny8gDC&ust=1625633216879000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCPiZlOXRzfECFQAAAAAdAAAAABAD',
       title: 'React Project 1',
       caption: 'This is short description',
       description: 'This is my first Project',
-      links: [{ link: 'http://web.aritrarivu.co.in/' }],
-      links: [{ link: 'https://github.com/Aritra1296' }],
+      links: [
+        { link: 'https://github.com/Aritra1296', icon: <GitHubIcon /> },
+        { link: 'http://web.aritrarivu.co.in/', icon: <Language /> },
+      ],
     },
     {
       tag: 'Java',
@@ -128,8 +131,10 @@ export default {
       title: 'Java Project 1',
       caption: 'This is short description',
       description: 'This is my first Project',
-      links: [{ link: 'http://web.aritrarivu.co.in/' }],
-      links: [{ link: 'https://github.com/Aritra1296' }],
+      links: [
+        { link: 'https://github.com/Aritra1296', icon: <GitHubIcon /> },
+        { link: 'http://web.aritrarivu.co.in/', icon: <Language /> },
+      ],
     },
   ],
 }

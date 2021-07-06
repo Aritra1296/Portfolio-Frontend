@@ -10,18 +10,14 @@ import CardMedia from '@material-ui/core/CardMedia'
 import Grow from '@material-ui/core/Grow'
 import Dialog from '@material-ui/core/Dialog'
 import DialogTitle from '@material-ui/core/DialogTitle'
+import DialogActions from '@material-ui/core/DialogActions'
+import DialogContent from '@material-ui/core/DialogContent'
 
 const Portfolio = () => {
   const [tabValue, setTabValue] = useState('All')
-  const projectDialog = () => {
-    <Dialog>
-      <DialogTitle></DialogTitle>
-      <img src="" alt="" />
-      <DialogContent>
-        
-      </DialogContent>
-    </Dialog>
-  }
+  const [projectDialogValue, setProjectDialogValue] = useState(false)
+
+  const ProjectDialog = () => {}
 
   return (
     <Grid container className='section pb_45 pt_45'>
@@ -43,12 +39,18 @@ const Portfolio = () => {
             label='All'
             value='All'
             className={
-              tabValue == 'All' ? 'customTabs_item_active' : 'customTabs_item'
+              tabValue == 'All' ? 'customTabs_item active' : 'customTabs_item'
             }
           />
           {[...new Set(resumeData.projects.map((item) => item.tag))].map(
             (tag) => (
-              <Tab label={tag} value={tag} />
+              <Tab
+                label={tag}
+                value={tag}
+                className={
+                  tabValue == tag ? 'customTabs_item active' : 'customTabs_item'
+                }
+              />
             )
           )}
         </Tabs>
@@ -64,7 +66,7 @@ const Portfolio = () => {
                     <Card
                       className='CustomCard'
                       onClick={() => {
-                        console.log('click')
+                        setProjectDialogValue(project)
                       }}
                     >
                       <CardActionArea>
@@ -74,14 +76,13 @@ const Portfolio = () => {
                           title={project.title}
                         >
                           <CardContent>
-                            <Typography className='CustomCard_title'>
+                            <Typography className='CustomCard_image'>
                               {project.title}
                             </Typography>
                             <Typography
                               variant='body2'
-                              className='CustomCard_description'
-                            >
-                              {project.description}
+                              className='' >
+                              {project.caption}
                             </Typography>
                           </CardContent>
                         </CardMedia>
@@ -94,6 +95,36 @@ const Portfolio = () => {
           ))}
         </Grid>
       </Grid>
+
+      {/* Dialog */}
+      <Dialog
+        open={projectDialogValue}
+        onClose={() => {
+          setProjectDialogValue(false)
+        }}
+      >
+        <DialogTitle
+          onClose={() => {
+            setProjectDialogValue(false)
+          }}
+        >
+          {projectDialogValue.title}
+        </DialogTitle>
+        <img src='' alt='' className='projectDialog_image' />
+        <DialogContent>
+          <Typography className='projectDialog_description'>
+            {projectDialogValue.description}
+          </Typography>
+        </DialogContent>
+        <DialogActions className='projectDialog_actions'>
+          {projectDialogValue?.links?.map((link) => (
+            <a href={link.link} target='_blank' className='projectDialog_icon'>
+              {link.icon}
+            </a>
+          ))}
+        </DialogActions>
+      </Dialog>
+      {/* End of Dialog */}
     </Grid>
   )
 }
