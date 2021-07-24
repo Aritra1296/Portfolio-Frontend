@@ -7,7 +7,6 @@ import Language from '@material-ui/icons/Language'
 import AssignmentOutlinedIcon from '@material-ui/icons/AssignmentOutlined'
 import WebOutlinedIcon from '@material-ui/icons/WebOutlined'
 
-
 export default {
   name: 'Aritra Chatterjee',
   title: 'Full Stack Developer',
@@ -110,10 +109,10 @@ export default {
   ],
   projects: [
     {
-      tag: 'React',
+      tag: 'MERN StACK',
       image:
         'https://images.unsplash.com/photo-1579546929662-711aa81148cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80',
-      title: 'React Project 1',
+      title: 'MERN stack Project 1',
       caption: 'This is a Contact Saver App',
       description:
         'Sometimes you might not want to save contact details in your phone. So that you can store the Contact Details information in this App Build on MERN',
@@ -123,10 +122,26 @@ export default {
       ],
     },
     {
+      tag: 'MERN StACK',
+      image:
+        'https://images.unsplash.com/photo-1579546929662-711aa81148cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80',
+      title: 'MERN stack Project 2',
+      caption: 'This is a Shopping App',
+      description:
+        'In this application you can add a product in your cart and place the order. Admin can only        show the orders placed by all users. Admin can also add or remove  product from the App.',
+      links: [
+        {
+          link: 'https://github.com/Aritra1296/Shopping-Frontend',
+          icon: <GitHubIcon />,
+        },
+        { link: '', icon: <Language /> },
+      ],
+    },
+    {
       tag: 'React',
       image:
         'https://images.unsplash.com/photo-1579546929662-711aa81148cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80',
-      title: 'React Project 2',
+      title: 'React Project 1',
       caption: 'This is a Portfolio App',
       description:
         'You can build your own portfolio and consolidate your all Projects',
@@ -140,8 +155,8 @@ export default {
       image:
         'https://images.unsplash.com/photo-1579546929662-711aa81148cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80',
       title: 'Java Project 1',
-      caption: 'This is short description',
-      description: 'This is my first Project',
+      caption: 'This is dummy record',
+      description: 'This is dummy record',
       links: [
         { link: 'https://github.com/Aritra1296', icon: <GitHubIcon /> },
         { link: 'http://web.aritrarivu.co.in/', icon: <Language /> },
