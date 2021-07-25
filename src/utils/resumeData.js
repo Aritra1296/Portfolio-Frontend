@@ -131,10 +131,10 @@ export default {
         'In this application you can add a product in your cart and place the order. Admin can only        show the orders placed by all users. Admin can also add or remove  product from the App.',
       links: [
         {
-          link: 'https://github.com/Aritra1296/Shopping-Frontend',
+          link: 'https://github.com/Aritra1296/Shopping-frontend',
           icon: <GitHubIcon />,
         },
-        { link: '', icon: <Language /> },
+        { link: 'http://flybuy.aritrarivu.co.in/', icon: <Language /> },
       ],
     },
     {
