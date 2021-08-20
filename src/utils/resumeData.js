@@ -122,7 +122,7 @@ export default {
       ],
     },
     {
-      tag: 'MERN StACK',
+      tag: 'MERN STACK',
       image:
         'https://images.unsplash.com/photo-1579546929662-711aa81148cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80',
       title: 'MERN stack Project 2',
@@ -135,6 +135,22 @@ export default {
           icon: <GitHubIcon />,
         },
         { link: 'http://flybuy.aritrarivu.co.in/', icon: <Language /> },
+      ],
+    },
+    {
+      tag: 'MERN STACK',
+      image:
+        'https://images.unsplash.com/photo-1579546929662-711aa81148cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80',
+      title: 'MERN stack Project 3',
+      caption: 'This is a Chat App',
+      description:
+        'In this application you chat with all the users who have already logged in. Pusher library is used.',
+      links: [
+        {
+          link: 'https://github.com/Aritra1296/chat-frontend',
+          icon: <GitHubIcon />,
+        },
+        { link: 'http://chatmates.aritrarivu.co.in/', icon: <Language /> },
       ],
     },
     {
