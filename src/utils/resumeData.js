@@ -92,7 +92,7 @@ export default {
   skills: [
     {
       title: 'FRONT END',
-      description: ['React Js', 'Javascript', 'Bootstrap', 'Material UI'],
+      description: ['React Js','Redux','Javascript','Node Js' ,'Bootstrap', 'Material UI'],
     },
     {
       title: 'BACK END',
@@ -144,7 +144,7 @@ export default {
       tag: 'MERN STACK',
       image:
         'https://images.unsplash.com/photo-1579546929662-711aa81148cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80',
-      title: 'MERN stack Project 3',
+      title: 'MERN stack Project 4',
       caption: 'This is a Blogging App',
       description:
         'In this application you can see blogs of admin profile. You can like or comment blogs also. Only Admin profile can add blog.',
@@ -154,19 +154,6 @@ export default {
           icon: <GitHubIcon />,
         },
         { link: 'http://blogosphere.aritrarivu.co.in/', icon: <Language /> },
-      ],
-    },
-    {
-      tag: 'React',
-      image:
-        'https://images.unsplash.com/photo-1579546929662-711aa81148cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80',
-      title: 'React Project 1',
-      caption: 'This is a Portfolio App',
-      description:
-        'You can build your own portfolio and consolidate your all Projects',
-      links: [
-        { link: 'https://github.com/Aritra1296', icon: <GitHubIcon /> },
-        { link: 'http://web.aritrarivu.co.in/', icon: <Language /> },
       ],
     },
     {
@@ -183,6 +170,25 @@ export default {
       ],
     },
     {
+      tag: 'React',
+      image:
+        'https://images.unsplash.com/photo-1579546929662-711aa81148cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80',
+      title: 'React Project 1',
+      caption: 'This is a Portfolio App',
+      description:
+        'You can build your own portfolio and consolidate your all Projects',
+      links: [
+        {
+          link: 'https://aritra-portfolio.herokuapp.com/',
+          icon: <GitHubIcon />,
+        },
+        {
+          link: 'https://github.com/Aritra1296/Portfolio-Frontend',
+          icon: <Language />,
+        },
+      ],
+    },
+    {
       tag: 'Java',
       image:
         'https://images.unsplash.com/photo-1579546929662-711aa81148cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80',
@@ -191,7 +197,10 @@ export default {
       description: 'This is dummy record',
       links: [
         { link: 'https://github.com/Aritra1296', icon: <GitHubIcon /> },
-        { link: 'http://web.aritrarivu.co.in/', icon: <Language /> },
+        {
+          link: 'https://github.com/Aritra1296/Portfolio-Frontend',
+          icon: <Language />,
+        },
       ],
     },
   ],
