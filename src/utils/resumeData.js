@@ -39,14 +39,14 @@ export default {
     },
   },
   about:
-    'Offering web development and enhancement since July 2019.Possess strong knowledge in Web Application Development, Deployment and SQL. Experience in various Frameworks (Spring MVC, Hibernate, Servlet, JDBC). Experience in MERN Stack development (Mongo DB, Express, React, Node JS).Experience in writing SQL queries as per requirements.Experience in writing HTML and CSS.Experience in writing Perl scripts for batch jobsStrong experience of AGILE Methodologies and Scrum processes.Experience in Insurance Company and Insurance Agent related Applications.Keen analyst with excellence in gathering and understanding requirements of clients & other multiple stakeholders (at strategic and tactical levels), followed by translation into functional specifications as well as provisioning of suitable technical solutions.Pleasing youthful personality with a zest for life, knowledge and sound understanding of technology.',
+    'Offering web development and enhancement since July 2019.Possess strong knowledge in Web Application Development, Deployment and SQL. Experience in various Frameworks (Spring MVC, Hibernate, Servlet, JDBC). Experience in MERN Stack development (Mongo DB, Express, React, Node JS, Redux).Experience in writing SQL queries as per requirements.Experience in writing HTML and CSS.Experience in writing Perl scripts for batch jobsStrong experience of AGILE Methodologies and Scrum processes.Experience in Insurance Company and Insurance Agent related Applications.Keen analyst with excellence in gathering and understanding requirements of clients & other multiple stakeholders (at strategic and tactical levels), followed by translation into functional specifications as well as provisioning of suitable technical solutions.Pleasing youthful personality with a zest for life, knowledge and sound understanding of technology.',
 
   experiences: [
     {
       title: 'Programmer Analyst- Cognizant ',
       date: 'July 2019- present',
       description:
-        'Application development and enhancement.Writing SQL queries as per requirements and prepare reports..Preparation of test cases.RCA preparation and give resolution. Reports building and reporting from the testing team. Handling Onsite & Offshore calls regularly giving updates. Attending project triage meetings and representing the team. ',
+        'Application development and enhancement.Writing SQL queries as per requirements and prepare reports.RCA preparation and give resolution. Handling Onsite & Offshore calls regularly giving updates. Attending project triage meetings and representing the team. ',
     },
   ],
   educations: [
@@ -92,7 +92,14 @@ export default {
   skills: [
     {
       title: 'FRONT END',
-      description: ['React Js','Redux','Javascript','Node Js' ,'Bootstrap', 'Material UI'],
+      description: [
+        'React Js',
+        'Redux',
+        'Javascript',
+        'Node Js',
+        'Bootstrap',
+        'Material UI',
+      ],
     },
     {
       title: 'BACK END',
@@ -112,7 +119,7 @@ export default {
       tag: 'MERN STACK',
       image:
         'https://images.unsplash.com/photo-1579546929662-711aa81148cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80',
-      title: 'MERN stack Project 2',
+      title: 'MERN stack Project 1',
       caption: 'This is a Shopping App',
       description:
         'In this application you can add a product in your cart and place the order. Admin profile can only  show the orders placed by all users. Admin can also add or remove product from the App.',
@@ -128,7 +135,7 @@ export default {
       tag: 'MERN STACK',
       image:
         'https://images.unsplash.com/photo-1579546929662-711aa81148cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80',
-      title: 'MERN stack Project 3',
+      title: 'MERN stack Project 2',
       caption: 'This is a Chat App',
       description:
         'In this application you can chat with all the users who have already logged in. Pusher library is used.',
@@ -144,7 +151,7 @@ export default {
       tag: 'MERN STACK',
       image:
         'https://images.unsplash.com/photo-1579546929662-711aa81148cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80',
-      title: 'MERN stack Project 4',
+      title: 'MERN stack Project 3',
       caption: 'This is a Blogging App',
       description:
         'In this application you can see blogs of admin profile. You can like or comment blogs also. Only Admin profile can add blog.',
@@ -157,10 +164,10 @@ export default {
       ],
     },
     {
-      tag: 'MERN StACK',
+      tag: 'MERN STACK',
       image:
         'https://images.unsplash.com/photo-1579546929662-711aa81148cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80',
-      title: 'MERN stack Project 1',
+      title: 'MERN stack Project 4',
       caption: 'This is a Contact Saver App',
       description:
         'Sometimes you might not want to save contact details in your phone. So that you can store the Contact Details information in this App Build on MERN',
@@ -179,11 +186,11 @@ export default {
         'You can build your own portfolio and consolidate your all Projects',
       links: [
         {
-          link: 'https://aritra-portfolio.herokuapp.com/',
+          link: 'https://github.com/Aritra1296/Portfolio-Frontend',
           icon: <GitHubIcon />,
         },
         {
-          link: 'https://github.com/Aritra1296/Portfolio-Frontend',
+          link: 'https://aritra-portfolio.herokuapp.com/',
           icon: <Language />,
         },
       ],
