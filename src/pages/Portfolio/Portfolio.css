@@ -38,7 +38,7 @@
 /* Dialog */
 
 .projectDialog .projectDialog_image {
-  max-width: 300px;
+  max-width: auto;
   width: 100%;
   object-fit: cover;
   object-position: center center;
@@ -59,6 +59,6 @@
   color: var(--main-color);
 }
 .projectDialog .projectDialog_icon > .MuiSvgIcon-root {
-  font-size: 40px !important;
+  font-size: 50px !important;
 }
 /* End of Dialog */
